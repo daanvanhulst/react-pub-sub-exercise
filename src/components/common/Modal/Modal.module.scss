@@ -1,0 +1,36 @@
+.o-modal {
+  @apply fixed inset-0 z-20 bg-gray-600 bg-opacity-90;
+
+  &__aligner {
+    @apply absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform;
+    @apply max-h-full max-w-[769px] overflow-auto p-4 outline-none;
+  }
+
+  &__title {
+    @apply mb-3;
+  }
+
+  &__content {
+    @apply relative p-6;
+
+    @screen md {
+      @apply p-8;
+    }
+  }
+
+  &__close-button {
+    @apply absolute right-3 top-3 rounded-xl p-1 text-gray-600;
+
+    &:active {
+      @apply bg-gray-200;
+    }
+  }
+
+  &__actions {
+    @apply mt-6 flex justify-end gap-4;
+
+    &--space-between {
+      @apply justify-between;
+    }
+  }
+}

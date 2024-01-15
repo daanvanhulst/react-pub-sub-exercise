@@ -1,0 +1,7 @@
+.o-box {
+  @apply bg-white shadow-md;
+
+  &--rounded {
+    @apply rounded-xl;
+  }
+}

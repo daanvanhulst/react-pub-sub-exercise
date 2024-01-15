@@ -1,0 +1,40 @@
+.o-heading {
+  &__h1,
+  &__h2,
+  &__h3,
+  &__h4 {
+    @apply font-medium text-gray-600;
+  }
+
+  &__h1 {
+    @apply text-3;
+
+    @screen md {
+      @apply text-4;
+    }
+  }
+
+  &__h2 {
+    @apply text-2;
+
+    @screen md {
+      @apply text-3;
+    }
+  }
+
+  &__h3 {
+    @apply text-1;
+
+    @screen md {
+      @apply text-2;
+    }
+  }
+
+  &__h4 {
+    @apply text-base;
+
+    @screen md {
+      @apply text-1;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.o-select {
+  $el: &;
+
+  &:focus {
+    #{$el}__icon {
+      @apply text-liander-blue;
+    }
+  }
+
+  &__label {
+    @apply mb-2 block font-semibold;
+  }
+
+  &__input {
+    @apply relative;
+  }
+
+  &__icon {
+    @apply absolute right-4 top-1/2 -translate-y-1/2 transform;
+  }
+
+  &__tag {
+    @apply w-full appearance-none rounded-full border border-solid border-gray-400 px-4 py-3 text-gray-600;
+
+    &:focus {
+      @apply border-liander-blue bg-blue-50 text-liander-blue outline-none;
+    }
+  }
+}

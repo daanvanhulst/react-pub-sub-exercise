@@ -1,0 +1,11 @@
+.o-paragraph {
+  @apply mb-6 text-base text-gray-600;
+
+  &--small {
+    @apply text-min-1;
+  }
+
+  &--bold {
+    @apply font-medium;
+  }
+}
